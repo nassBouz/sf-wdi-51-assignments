@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>One Comment</h1>
+<article class="message is-primary">
+    <div class="message-header">
+        <!-- <a href={{url_for('comts', id=comment.id)}}>{{comment.title}}</a> -->
+        <div>< {{comment.title}}/div>
+        <p>By: {{comment.user}}</p>
+    </div>
+    <div class="message-body">
+        {{comment.text}}
+    </div>
+    <a>r/{{comment.post}}</a>
+</article>
+
+{% endblock %}
